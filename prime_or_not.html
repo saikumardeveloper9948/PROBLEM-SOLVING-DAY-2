@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>2) WAP to check whether a number is prime or not by using function</h3> <br>
+
+   <h5> input: Enter a number: 7</h5> <br>
+    <h5>output: 7 is prime</h5> <br>
+
+    <h2>inspect to see the out put</h2>
+
+
+
+    <script>
+        //------------- prime number --------------------------
+
+        function number(num1){
+
+      
+      if (num1 > 1) {
+        count = 0;
+        for (i = 2; i < num1; i++) {
+          if (num1 % i == 0) {
+            console.log(`${num1} is not a prime number`);
+            count++;
+            break;
+          }
+        }
+        if (count == 0) {
+          console.log(`${num1} is a prime`);
+        }
+      }
+      else{
+        console.log('enter positive integers')
+      }
+    }
+    number(7)
+    </script>
+</body>
+</html>
